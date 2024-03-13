@@ -11,7 +11,7 @@ def grid(img, paso=28):
     
     for y in range(0, altura, paso):
         cv2.line(img, (0, y), (ancho, y), color, grosor)
-def square(img)
+def square(img):
     color = (0, 255, 0) 
     grosor = 1 
     topLeftX = 280
@@ -26,7 +26,7 @@ def square(img)
     return imgcp
     
 # Iniciar la captura de video de la webcam (el índice 0 se refiere a la webcam predeterminada)
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(2)
 # Ajustar la resolución a 720p
 # Estas líneas establecen la anchura (WIDTH) a 1280 y la altura (HEIGHT) a 720
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
