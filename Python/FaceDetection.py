@@ -15,7 +15,7 @@ while True:
   for (x,y,w,h) in faces:
     cv2.rectangle(frame, (x,y),(x+w,y+h),(0,255,0),2)
     substitute_resized = cv2.resize(substitute_image, (w, h))
-    input_image[y:y+h, x:x+w] = substitute_resized
+    frame[y:y+h, x:x+w] = substitute_resized
   cv2.imshow('frame',frame)
   keyp = cv2.waitKey(1)
   if  keyp == ord('q') or keyp == ord('Q'):
