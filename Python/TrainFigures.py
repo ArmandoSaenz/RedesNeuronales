@@ -81,5 +81,5 @@ model.fit(np.array(train_images), np.array(train_labels), epochs=30, validation_
 model.save_weights('model_weights_tsc.h5')
 
 # Evaluar el modelo
-test_loss, test_acc = model.evaluate(test_images, test_labels)
+test_loss, test_acc = model.evaluate(np.array(test_images), np.array(test_labels))
 print('Test accuracy:', test_acc)
